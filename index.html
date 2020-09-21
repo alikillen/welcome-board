@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <body>
-    <!-- Welcome message with customisable name. Add in JS for this -->
-    <h1>Welcome!</h1>
-    <br>
-    <!-- Input is place holder for JS which should show the current time -->
-    <h1>Current Time here</h1>
-    <br>
-    <!-- Link to API for random quotes from public API to show up -->
-    <h1>Quote here</h1>
-    <script src="index.js"></script>
-    <br> 
-  </body>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <!-- need to have jquery and axios here for API calls in JS? -->
+  <title>Morning Board</title>
+  <script src = ./script.js></script>
+
+</head>
+<body>
+<!-- In this layout, we display the areas in source order for any screen less that 500 pixels wide. We go to a two column layout, and then to a three column layout by redefining the grid, and the placement of items on the grid. -->
+  
+<div class="wrapper">
+    <div class="main-left">
+       <div class = "weatherDiv">Weather Here</div>
+       <div class = todoDiv>To Do Here</div>
+    </div>
+    <article class="content">
+        <h1>Main content area</h1>
+        <div class = "time"><h1>Time Here</h1></div>
+        <div class = "name"><h1>Name/greeting Here</h1></div>
+        <div class = "quote">Quote Here</div>
+        
+    </article> 
+    <div class="news">News</div>
+    <div class="jokes">Jokes</div>
+    
+</div>
+
+
+  
+</body>
 </html>
