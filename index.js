@@ -70,37 +70,59 @@ function writeName() {
 
 }
 
-function getNews (){
-  fetch('http://newsapi.org/v2/top-headlines?country=au&apiKey=b4206a91352b415dbd530477c1c6c1ea', {mode: 'cors'})
-  // get rid of secret key/dont upload
-  // fix CORS - refactor into XML?
-  .then(response => response.json())
-  .then(function(data) {
-    console.log(data)
-    // let newsHeadline =
-    // get data from json api news object
-    // let newsUl = document.createElement('ul')
+// function getNews (){
+//   fetch('http://newsapi.org/v2/top-headlines?country=au&apiKey=b4206a91352b415dbd530477c1c6c1ea')
+//   // get rid of secret key/dont upload
+//   // fix CORS - refactor into XML?
+//   // download: true,
+//   // header: true,
+//   .then(response => response.json())
+//   .then(function(data) {
+//     console.log(data)
+//     // let newsHeadline =
+//     // get data from json api news object
+//     // let newsUl = document.createElement('ul')
 
-    // for each headline create a li inside the div, append to ul, append ul to div
-    // data.forEach {headline,
+//     // for each headline create a li inside the div, append to ul, append ul to div
+//     // data.forEach {headline,
     
 
-    // headlineLi = document.createElement('li')
-    // headlineLi.innerHTML =
-    // // and set innerhtml of li to include hyperlink to article 
-    // }
+//     // headlineLi = document.createElement('li')
+//     // headlineLi.innerHTML =
+//     // // and set innerhtml of li to include hyperlink to article 
+//     // }
 
-  // document.getElementById("news").append(newsUl)
+//   // document.getElementById("news").append(newsUl)
 
-    // 
-        })
+//     // 
+//         })
    
 
-  .catch(function(error) {
-    console.log(error)
-  });   
+//   .catch(function(error) {
+//     console.log(error)
+//   });   
 
-}
+// }
+
+function getNews (){
+        
+  // alert(postcode.value)
+  console.log("inside news function")
+
+
+  Papa.parse("http://newsapi.org/v2/top-headlines?country=au&apiKey=b4206a91352b415dbd530477c1c6c1ea", {
+      download: true,
+      header: true,
+      // not sure what header does but its required
+      complete: function (results) {
+        console.log(results)
+          }
+        })
+
+            }
+
+
+
 
 
 function writeGoal(){
