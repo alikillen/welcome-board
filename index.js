@@ -25,6 +25,26 @@ function getQuote() {
   })
 }
 
+function getBackgroundImage() {
+  fetch('https://api.unsplash.com/photos/random/?client_id=NqIsO3c4yryENpk6v__yQqDe8I_dMASVVrLTcba8X1Q')
+  // get rid of secret key/dont upload
+  .then(response => response.json())
+  .then(function(data) {
+    // console.log(data)
+    
+      let photoUrl = data.urls.full     
+      // console.log(photoUrl)
+      //   console.log(the_html)
+      document.getElementById('the_html').style.backgroundImage = "url(" + photoUrl + ")"
+        })
+   
+
+  .catch(function(error) {
+    console.log(error)
+  });   
+
+}
+
 function writeName() {
   let welcomeMsg = document.getElementById('welcome');
   let name = document.getElementById('name');
@@ -35,8 +55,11 @@ function writeName() {
   formContent.innerHTML = "";
 }
 
-window.onload = function display() {
+// do it all in one onload function in JS file
+// When the page is loaded/refreshed, calls all funcs
+window.onload = function display () {
   // Everytime you add a new function make sure to call it down here
   showTime();
   getQuote();
+  getBackgroundImage();
 }

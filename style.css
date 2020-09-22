@@ -3,13 +3,21 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: aliceblue;
+  color: white;
 }
 
 .content {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: content;
+  border: 5px solid black;
+}
+
+.weatherDiv {
+  border: 5px solid black;
+}
+
+.todoDiv {
   border: 5px solid black;
 }
 

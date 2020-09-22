@@ -1,43 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="the_html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel = "stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <!-- need to have jquery and axios here for API calls in JS? -->
   <title>Morning Board</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- trying jquery here for background img -->
   <script src="index.js"></script>
+  <!-- should script be here or at end of body? best practice? -->
 </head>
 <body>
 <!-- In this layout, we display the areas in source order for any screen less that 500 pixels wide. We go to a two column layout, and then to a three column layout by redefining the grid, and the placement of items on the grid. -->
-<div class="wrapper">
-    <div class="main-left">
-       <div class="weatherDiv">Weather Here</div>
-    </div>
-    <article class="content">
-        <!-- Can this h1 be deleted -->
-        <h1>Main content area</h1>
-        <div id="clockDisplay" class="time">
-          <p id="test"></p>
-        </div>
-        <div class="name">
-          <p id="welcome"></p>
+ 
+    <div class="wrapper">
+      <div class="main-left">
+        <div class="weatherDiv">Weather Here</div>
+      </div>
+      <article class="content">
+          <h1>Main content area</h1>
+          <div id="clockDisplay" class="time">
+            <p id="test"></p>
+          </div>
+          <div class="name">
+            <p id="welcome"></p>
             <form id="entername">
               What is your name:<input type="text" id="name" /><br/>
               <input type="button" value="Submit" onclick="writeName();" />
             </form>
         </div>
-        <div class="quote">
-          <p id="quote"></p>
-          <small id="author"></small>
-          <br>
-          <br>
-        </div>
-    </article>
-    <div class="news">News</div>
-    <div class="jokes">Jokes</div>
-</div>
-</body>
+          <div class="quote">
+            <p id="quote"></p>
+            <small id="author"></small>
+            <br>
+            <br>
+          </div>
+      </article>
+      <div class="news">News</div>
+      <div class="jokes">Jokes</div>
+    </div>
+  </body>
 </html>
 
