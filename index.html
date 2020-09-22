@@ -7,30 +7,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <!-- need to have jquery and axios here for API calls in JS? -->
   <title>Morning Board</title>
-  <!-- <script src = ./index.js></script> -->
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- trying jquery here for background img -->
+  <script src="index.js"></script>
+  <!-- should script be here or at end of body? best practice? -->
 </head>
 <body>
 <!-- In this layout, we display the areas in source order for any screen less that 500 pixels wide. We go to a two column layout, and then to a three column layout by redefining the grid, and the placement of items on the grid. -->
-  
+ 
 <div class="wrapper">
     <div class="main-left">
-       <div class = "weatherDiv">Weather Here</div>
-       <div class = todoDiv>To Do Here</div>
+       <div class="weatherDiv">Weather Here</div>
+       <div class="todoDiv">To Do Here</div>
     </div>
     <article class="content">
         <h1>Main content area</h1>
-        <div class = "time"><h1>Time Here</h1></div>
-        <div class = "name"><h1>Name/greeting Here</h1></div>
-        <div class = "quote"><h1>Quote Here</h1></div>
-        
+        <div id="clockDisplay">
+          <!-- appendChild works in paragraphs only not H1-->
+          <p id="testTime"></p>
+        </div>
+        <div class="name"><h1>Name/greeting Here</h1></div>
+        <div class="quote"><h1>Quote here</h1></div>
     </article> 
     <div class="news">News</div>
     <div class="jokes">Jokes</div>
     
 </div>
 
-<script src= "./index.js" ></script>
+
   
 </body>
 </html>
