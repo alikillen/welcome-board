@@ -4,7 +4,7 @@ html {
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
-  background-color: aliceblue;
+  // background-color: aliceblue;
 }
 
 h1 {
@@ -24,6 +24,11 @@ h1 {
 .name {
   border: 5px solid black;
 }
+
+.weatherDiv {
+  border: 5px solid black;
+}
+
 .main-left {
   grid-area: main-left;
   border: 5px solid black;
