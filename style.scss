@@ -53,6 +53,11 @@ h1 {
     "quote";
 }
 
+// elements within the to do list
+.ul li {
+  position: relative;
+}
+
 @media (min-width: 500px) {
   .wrapper {
     grid-template-columns: 1fr 3fr;
