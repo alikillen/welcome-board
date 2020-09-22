@@ -45,6 +45,16 @@ function getBackgroundImage() {
 
 }
 
+function writeName() {
+  let welcomeMsg = document.getElementById('welcome');
+  let name = document.getElementById('name');
+  let formContent = document.getElementById('entername');
+
+  welcomeMsg.innerHTML = "Welcome "+ name.value;
+  // remove form text input box after name is entered
+  formContent.innerHTML = "";
+}
+
 // do it all in one onload function in JS file
 // When the page is loaded/refreshed, calls all funcs
 window.onload = function display () {
@@ -53,7 +63,3 @@ window.onload = function display () {
   getQuote();
   getBackgroundImage();
 }
-
-
-
-    
