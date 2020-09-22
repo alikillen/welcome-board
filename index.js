@@ -25,6 +25,16 @@ function getQuote() {
   })
 }
 
+function writeName() {
+  let welcomeMsg = document.getElementById('welcome');
+  let name = document.getElementById('name');
+  let formContent = document.getElementById('entername');
+
+  welcomeMsg.innerHTML = "Welcome "+ name.value;
+  // remove form text input box after name is entered
+  formContent.innerHTML = "";
+}
+
 window.onload = function display() {
   // Everytime you add a new function make sure to call it down here
   showTime();

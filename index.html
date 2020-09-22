@@ -16,12 +16,17 @@
        <div class="weatherDiv">Weather Here</div>
     </div>
     <article class="content">
+        <!-- Can this h1 be deleted -->
         <h1>Main content area</h1>
         <div id="clockDisplay" class="time">
           <p id="test"></p>
         </div>
         <div class="name">
-          <h1>Name/greeting Here</h1>
+          <p id="welcome"></p>
+            <form id="entername">
+              What is your name:<input type="text" id="name" /><br/>
+              <input type="button" value="Submit" onclick="writeName();" />
+            </form>
         </div>
         <div class="quote">
           <p id="quote"></p>
