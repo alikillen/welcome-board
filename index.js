@@ -42,6 +42,8 @@ function getBackgroundImage() {
 
   .catch(function(error) {
     console.log(error)
+    let photoUrl = "./img/beach.jpg"
+    document.getElementById('the_html').style.backgroundImage = "url(" + photoUrl + ")"
   });   
 
 }
