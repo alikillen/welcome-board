@@ -6,32 +6,65 @@ html {
   background-position: center;
   // background-color: aliceblue;
   color: white;
+
 }
 
 h1 {
   // justify-text: center;
 }
 
+input[type=text] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid grey;
+  border-radius: 4px;
+}
+
 .content {
   grid-area: content;
   border: 5px solid black;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 }
 
+.dynamicWelcomeMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .weatherDiv {
   border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .todoDiv {
   border: 5px solid black;
+  
 }
 
 .time {
   border: 5px solid black;
   // text-justify: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.name {
+.goalDiv {
   border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameDiv {
+  border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-left {
   grid-area: main-left;
@@ -40,14 +73,23 @@ h1 {
 .news {
   grid-area: news;
   border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .jokes {
   grid-area: jokes;
   border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .quote {
   grid-area: quote;
   border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper {
