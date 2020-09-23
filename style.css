@@ -17,7 +17,6 @@ input[type=text] {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: content;
-  border: 5px solid black;
 }
 
 .dynamicWelcomeMessage {
@@ -33,7 +32,6 @@ input[type=text] {
 }
 
 .weatherDiv {
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,12 +43,7 @@ input[type=text] {
           justify-content: center;
 }
 
-.todoDiv {
-  border: 5px solid black;
-}
-
 .time {
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +56,6 @@ input[type=text] {
 }
 
 .goalDiv {
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +68,6 @@ input[type=text] {
 }
 
 .nameDiv {
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,14 +83,12 @@ input[type=text] {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: main-left;
-  border: 5px solid black;
 }
 
 .news {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: news;
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +104,6 @@ input[type=text] {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: jokes;
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +119,6 @@ input[type=text] {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: quote;
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

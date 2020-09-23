@@ -22,7 +22,7 @@ input[type=text] {
 
 .content {
   grid-area: content;
-  border: 5px solid black;
+  // border: 5px solid black;
   // display: flex;
   // align-items: center;
   // justify-content: center;
@@ -34,19 +34,19 @@ input[type=text] {
   justify-content: center;
 }
 .weatherDiv {
-  border: 5px solid black;
+  // border: 5px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .todoDiv {
-  border: 5px solid black;
+  // border: 5px solid black;
   
 }
 
 .time {
-  border: 5px solid black;
+  // border: 5px solid black;
   // text-justify: center;
   display: flex;
   align-items: center;
@@ -54,39 +54,39 @@ input[type=text] {
 }
 
 .goalDiv {
-  border: 5px solid black;
+  // border: 5px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .nameDiv {
-  border: 5px solid black;
+  // border: 5px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .main-left {
   grid-area: main-left;
-  border: 5px solid black;
+  // border: 5px solid black;
 }
 .news {
   grid-area: news;
-  border: 5px solid black;
+  // border: 5px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .jokes {
   grid-area: jokes;
-  border: 5px solid black;
+  // border: 5px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .quote {
   grid-area: quote;
-  border: 5px solid black;
+  // border: 5px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
