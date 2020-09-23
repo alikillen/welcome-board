@@ -65,7 +65,9 @@ input[type=text] {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-size: 150%;
 }
+
 .main-left {
   grid-area: main-left;
   // border: 5px solid black;

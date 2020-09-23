@@ -39,7 +39,6 @@ function getBackgroundImage() {
       // edit opacity here
         })
    
-
   .catch(function(error) {
     console.log(error)
   });   
@@ -52,78 +51,10 @@ function writeName() {
   let name = document.getElementById('nameText');
   let formContent = document.getElementById('nameForm');
 
-  namePara.innerHTML = "Welcome "+ name.value;
+  namePara.innerHTML = "Hi "+ name.value + "!";
   // // remove form text input box after name is entered
   formContent.innerHTML = "";
-  // console.log(name.value)
-  // let welcomeMessageDiv = document.getElementById("dynamicWelcomeMessage")
-  // console.log(welcomeMessageDiv)
-
-  // trying to return name value into welcome message div
-  // if (name.value !== undefined){
-  //   let welcomeMessageDiv = document.getElementById("dynamicWelcomeMessage")
-  //   console.log(welcomeMessageDiv)
-  //   welcomeMessageDiv.innerHTML = `Welcome, ${name.value}`
-  //   // name.innerHTML = "";
-  //   nameDiv.innerHTML = "";
-  // }
-
 }
-
-// function getNews (){
-//   fetch('http://newsapi.org/v2/top-headlines?country=au&apiKey=b4206a91352b415dbd530477c1c6c1ea')
-//   // get rid of secret key/dont upload
-//   // fix CORS - refactor into XML?
-//   // download: true,
-//   // header: true,
-//   .then(response => response.json())
-//   .then(function(data) {
-//     console.log(data)
-//     // let newsHeadline =
-//     // get data from json api news object
-//     // let newsUl = document.createElement('ul')
-
-//     // for each headline create a li inside the div, append to ul, append ul to div
-//     // data.forEach {headline,
-    
-
-//     // headlineLi = document.createElement('li')
-//     // headlineLi.innerHTML =
-//     // // and set innerhtml of li to include hyperlink to article 
-//     // }
-
-//   // document.getElementById("news").append(newsUl)
-
-//     // 
-//         })
-   
-
-//   .catch(function(error) {
-//     console.log(error)
-//   });   
-
-// }
-
-function getNews (){
-        
-  // alert(postcode.value)
-  console.log("inside news function")
-
-
-  Papa.parse("http://newsapi.org/v2/top-headlines?country=au&apiKey=b4206a91352b415dbd530477c1c6c1ea", {
-      download: true,
-      header: true,
-      // not sure what header does but its required
-      complete: function (results) {
-        console.log(results)
-          }
-        })
-
-            }
-
-
-
-
 
 function writeGoal(){
   let goalPara = document.getElementById('goalPara');
@@ -133,7 +64,6 @@ function writeGoal(){
   goalForm.innerHTML = "";
 }
 
-
 // do it all in one onload function in JS file
 // When the page is loaded/refreshed, calls all funcs
 window.onload = function display () {
@@ -141,5 +71,4 @@ window.onload = function display () {
   showTime();
   getQuote();
   getBackgroundImage();
-  getNews();
 }
