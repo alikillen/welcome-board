@@ -6,7 +6,6 @@ function showTime() {
   let time = new Date();
   let currentTime = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
   let clockDisplay = document.getElementById("test");
-
   clockDisplay.innerText = currentTime;
 };
 
