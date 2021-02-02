@@ -9,8 +9,6 @@
   <title>Morning Board</title>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <!-- trying jquery here for background img -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.2.0/papaparse.js"></script>
-  <!-- trying papa parse for news -->
   <script src="index.js"></script>
   <!-- should script be here or at end of body? best practice? -->
 </head>
@@ -24,10 +22,9 @@
         <div id="location"></div>
       </div>
       <article class="content">
-        <!-- main content here -->
           <h1>
             <div class = "dynamicWelcomeMessage">
-            Welcome to MorningBoard
+              MorningBoard
             </div>
           </h1>
 
@@ -37,12 +34,21 @@
           </div>
           </h1>
           <div class="nameDiv">
-            <p id="namePara"></p>
+            <h1 id="namePara"></h1>
             <form id="nameForm">
               What is your name?<input type="text" id="nameText" /><br/>
               <input class="button" type="button" value="Submit" onclick="writeName();" />
             </form>
         </div>
+        <br>
+        <br>
+          <h1>
+          <div id="clockDisplay" class="time">
+            <p id="test"></p>
+          </div>
+          </h1>
+        <br>
+        <br>
         <div class = "goalDiv">
           <p id = "goalPara">
           <form id="goalForm">
@@ -51,6 +57,8 @@
           </form>
         </p>
         </div>
+        <br>
+        <br>
           <div class="quote">
             <p id="quote"></p>
             <br>
@@ -60,8 +68,6 @@
             <br>
           </div>
       </article>
-      <div class="news">News</div>
-      <div class="jokes">Jokes</div>
     </div>
   </body>
 </html>

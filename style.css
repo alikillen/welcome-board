@@ -53,7 +53,6 @@ button:active {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: content;
-  border: 5px solid black;
 }
 
 .dynamicWelcomeMessage {
@@ -69,7 +68,6 @@ button:active {
 }
 
 .weatherDiv {
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,12 +79,7 @@ button:active {
           justify-content: center;
 }
 
-.todoDiv {
-  border: 5px solid black;
-}
-
 .time {
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +92,6 @@ button:active {
 }
 
 .goalDiv {
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +104,6 @@ button:active {
 }
 
 .nameDiv {
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,20 +113,19 @@ button:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-size: 150%;
 }
 
 .main-left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: main-left;
-  border: 5px solid black;
 }
 
 .news {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: news;
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +141,6 @@ button:active {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: jokes;
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,7 +156,6 @@ button:active {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: quote;
-  border: 5px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,5 +202,48 @@ button:active {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+input[type=text] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 6px;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  padding: .5rem .5rem;
+  margin: 0;
+  border-radius: 6px;
+  text-decoration: none;
+  background: grey;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: background 250ms ease-in-out,  -webkit-transform 150ms ease;
+  transition: background 250ms ease-in-out,  -webkit-transform 150ms ease;
+  transition: background 250ms ease-in-out,  transform 150ms ease;
+  transition: background 250ms ease-in-out,  transform 150ms ease,  -webkit-transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: #0053ba;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 /*# sourceMappingURL=style.css.map */

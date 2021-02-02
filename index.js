@@ -6,7 +6,6 @@ function showTime() {
   let time = new Date();
   let currentTime = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
   let clockDisplay = document.getElementById("test");
-
   clockDisplay.innerText = currentTime;
 };
 
@@ -39,7 +38,6 @@ function getBackgroundImage() {
       // edit opacity here
         })
    
-
   .catch(function(error) {
     console.log(error)
     let photoUrl = "./img/beach.jpg"
@@ -57,19 +55,6 @@ function writeName() {
   namePara.innerHTML = "Welcome "+ name.value;
   // remove form text input box after name is entered
   formContent.innerHTML = "";
-  // console.log(name.value)
-  // let welcomeMessageDiv = document.getElementById("dynamicWelcomeMessage")
-  // console.log(welcomeMessageDiv)
-
-  // trying to return name value into welcome message div
-  // if (name.value !== undefined){
-  //   let welcomeMessageDiv = document.getElementById("dynamicWelcomeMessage")
-  //   console.log(welcomeMessageDiv)
-  //   welcomeMessageDiv.innerHTML = `Welcome, ${name.value}`
-  //   // name.innerHTML = "";
-  //   nameDiv.innerHTML = "";
-  // }
-
 }
 
 // function getNews (){
@@ -142,6 +127,7 @@ function weatherBalloon(cityID) {
   fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
   .then(function(resp) { return resp.json() }) // Convert data to json
   .then(function(data) {
+    console.log(data);
     drawWeather(data);
   })
   .catch(function() {
